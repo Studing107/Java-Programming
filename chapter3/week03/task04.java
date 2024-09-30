@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 public class task04 {
-    public static void main(String[] args) {
-        double S, G;
+     public static void main(String[] args) {
+        double subtotal, gratuityRate;
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the subtotal and a gratuity rate: ");
-        S = sc.nextDouble(); G = sc.nextDouble();
-        double g = S * G * 0.01;
-        double sum = S + g;
-        System.out.println("The gratuity is " + g + " and total is " + sum);
+        subtotal = sc.nextDouble(); gratuityRate = sc.nextDouble();
+        double gratuity = subtotal * gratuityRate * 0.01;
+        double total = subtotal + gratuity;
+        System.out.println("The gratuity is " + gratuity + " and total is " + total);
     }
 }
