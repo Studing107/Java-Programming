@@ -8,12 +8,12 @@ public class task06 {
         double distance = sc.nextDouble();
 
         System.out.print("Enter the miles per gallon:  ");
-        double Efficiency = sc.nextDouble();
+        double fuelEfficiency = sc.nextDouble();
 
         System.out.print("Enter the price per gallon: ");
-        double PerGallon = sc.nextDouble();
+        double pricePerGallon = sc.nextDouble();
 
-        double sum = (distance / Efficiency) * PerGallon;
-        System.out.printf("The cost of the trip is: $%.2f\n", sum);
+        double totalCost = (distance / fuelEfficiency) * pricePerGallon;
+        System.out.printf("The cost of the trip is: $%.2f\n", totalCost);
     }
 }
