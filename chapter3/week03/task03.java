@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
 public class task03 {
-    public static void main(String[] args) {
-        final double p = 3.14;
-        double l, r, S, V;
+   public static void main(String[] args) {
+        final double PI = 3.14;
+        double length, radius, area, volume;
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the radius and length of a cylinder: ");
-        r = sc.nextDouble();
-        l = sc.nextDouble();
-        S = r * r * p;
-        v = S * l;
-        System.out.println("The area is " + S);
-        System.out.println("The volume is " + V);
+        radius = sc.nextDouble();
+        length = sc.nextDouble();
+        area = radius * radius * PI;
+        volume = area * length;
+        System.out.println("The area is " + area);
+        System.out.println("The volume is " + volume);
     }
 }
